@@ -1,8 +1,7 @@
-import './style.css'
+import van from 'vanjs-core'
 
-const app = document.querySelector<HTMLDivElement>('#app')!
+const { a, div, li, p, ul } = van.tags
 
-app.innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`
+const Hello = () => div(p('👋Hello'), ul(li('🗺️World'), li(a({ href: 'https://vanjs.org/' }, '🍦VanJS'))))
+
+van.add(document.body, Hello())
