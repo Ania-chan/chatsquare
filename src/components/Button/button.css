@@ -1,0 +1,68 @@
+.button {
+  width: 173px;
+  height: 64px;
+  padding: 8px, 24px;
+  border: solid var(--neutral-dark);
+  border-radius: 5px 5px 0px 0px;
+  border-width: 0px 0px 8px 0px;
+  font-size: 16px;
+  color: var(--neutral-light);
+  text-transform: uppercase;
+}
+
+.button:hover {
+  border: solid;
+  border-width: 8px 0px 0px 0px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.button.default {
+  background-color: var(--secondary);
+}
+
+.button.default:hover {
+  background-color: var(--neutral-dark);
+  border-color: var(--secondary);
+}
+
+.button.success {
+  background-color: var(--success);
+  color: var(--neutral-dark)
+}
+
+.button.success:hover {
+  background-color: var(--neutral-dark);
+  border-color: var(--success);
+  color: var(--neutral-light);
+}
+
+.button.warning {
+  background-color: var(--warning);
+  color: var(--neutral-dark)
+}
+
+.button.warning:hover {
+  background-color: var(--neutral-dark);
+  border-color: var(--warning);
+  color: var(--neutral-light);
+}
+
+.button.error {
+  background-color: var(--error);
+}
+
+.button.error:hover {
+  background-color: var(--neutral-dark);
+  border-color: var(--error);
+}
+
+.button.info {
+  background-color: var(--info);
+  color: var(--neutral-dark)
+}
+
+.button.info:hover {
+  background-color: var(--neutral-dark);
+  border-color: var(--info);
+  color: var(--neutral-light);
+}
