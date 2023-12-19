@@ -1,0 +1,19 @@
+.numberInput {
+  width: 76px;
+  height: 36px;
+  border: solid 2px var(--secondary);
+  border-radius: 8px;
+  background-color: var(--neutral-light);
+  color: var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  background-color: var(--neutral-light);
+  border: none;
+  border-radius: 8px;
+  width: 68px;
+  height: 30px;
+}
