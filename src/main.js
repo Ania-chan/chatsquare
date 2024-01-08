@@ -1,13 +1,15 @@
 import van from 'vanjs-core'
 import { Button } from './components/Button/Button'
 import { NumberInput } from './components/NumberInput/NumberInput'
+import { NameGenerator } from './components/NameGenerator/NameGenerator'
 
-const { a, div, li, p, ul } = van.tags
+const { div } = van.tags
 
 const Hello = () =>
   div(
     { class: 'root' },
     div(NumberInput({ min: '1', name: 'example', alt: 'number input example' })),
+    div(NameGenerator),
     div(
       Button({
         text: 'create room',
