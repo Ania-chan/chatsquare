@@ -7,7 +7,7 @@ const { a, div, li, p, ul } = van.tags
 const Hello = () =>
   div(
     { class: 'root' },
-    div(NumberInput),
+    div(NumberInput({ min: '1', name: 'example', alt: 'number input example' })),
     div(Button({ text: 'create room', onClick: () => alert('Hello from 🍦VanJS') })),
     div(Button({ text: 'create room', type: 'success', onClick: () => alert('Hello from 🍦VanJS') })),
     div(Button({ text: 'create room', type: 'warning', onClick: () => alert('Hello from 🍦VanJS') })),

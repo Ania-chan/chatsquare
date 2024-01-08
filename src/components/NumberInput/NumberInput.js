@@ -4,4 +4,5 @@ import './numberInput.css'
 
 const { div, input } = van.tags
 
-export const NumberInput = () => div({ class: 'numberInput' }, input({ type: 'number', min: '1', class: 'input' }))
+export const NumberInput = ({ min = '0', max = '100', name = '', alt = '' }) =>
+  div({ class: 'numberInput' }, input({ type: 'number', min, max, name, alt, class: 'input' }))
