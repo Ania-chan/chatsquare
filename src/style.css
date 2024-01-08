@@ -10,7 +10,7 @@
   --info: #66D9EF;
 }
 
-#app {
+* {
   font-family: Montserrat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
