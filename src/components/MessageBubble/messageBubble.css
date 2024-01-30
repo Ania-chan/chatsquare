@@ -1,0 +1,22 @@
+.textBubbleContainer {
+
+}
+
+.timeAndUser {
+  font-size: 10px;
+  font-weight: 900;
+  color: var(--warning);
+  font-style: bold;
+  margin: 3px;
+}
+
+.textBubble {
+  border: solid 2px var(--warning);
+  border-radius: 8px;
+  background-color: var(--neutral-light);
+  padding: 0px 17px;
+}
+
+.text {
+  margin: 13px 0px;
+}
