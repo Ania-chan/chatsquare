@@ -4,8 +4,8 @@ import { NumberInput } from './components/NumberInput/NumberInput'
 import { NameGenerator } from './components/NameGenerator/NameGenerator'
 import { TextArea } from './components/TextArea/TextArea'
 import { MessageBubble } from './components/MessageBubble/MessageBubble'
+import { Icon } from './components/Icon/Icon'
 import { generateUsername } from './lib/utils'
-// import { Icon } from './components/NameGenerator/Icon'
 
 const { div } = van.tags
 
@@ -18,7 +18,7 @@ const Hello = () =>
     div({ style: () => ` margin: 20px;width: 350px;` }, NameGenerator({ generateUsername })),
     div({ style: () => ` margin: 20px;width: 350px;` }, TextArea({ rows: '6', cols: '30' })),
     div({ style: () => ` margin: 20px;width: 350px;` }, MessageBubble({ text: 'Test', time: '2min', user: 'You' })),
-    // div(Icon),
+    div(Icon({ name: 'dice' })),
     div(
       { style: () => ` margin: 20px;width: 350px;` },
       Button({
